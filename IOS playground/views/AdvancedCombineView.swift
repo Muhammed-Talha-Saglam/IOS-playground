@@ -209,7 +209,7 @@ struct AdvancedCombineView: View {
                 
                 VStack {
                     ForEach(vm.dataBools, id: \.self) { data in
-                        Text("\(data)")
+                        Text("\(data.description)")
                             .bold()
                     }
                 }

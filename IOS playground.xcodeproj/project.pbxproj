@@ -12,6 +12,7 @@
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
+		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
 		C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */; };
@@ -47,6 +48,7 @@
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
+		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
 		C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesView.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				C072832F284A5EF900DC3BE5 /* Advanced Combine */,
+				C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */,
 				C0C8F9DC2843EE4B0024782B /* YoutubeAnimation */,
 				C012EC4D28395CE600E58F15 /* ViewStyles.swift */,
 				C012EC50283973C900E58F15 /* AnyTransitionView.swift */,
@@ -102,16 +104,9 @@
 				C0964BAF283FF250000B754E /* ViewBuilderSample.swift */,
 				C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */,
 				C0B9DFC42843A00E00328E11 /* UIViewControllerRepresentableSample.swift */,
+				C0728332284A7CF500DC3BE5 /* FuturesView.swift */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		C072832F284A5EF900DC3BE5 /* Advanced Combine */ = {
-			isa = PBXGroup;
-			children = (
-				C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */,
-			);
-			path = "Advanced Combine";
 			sourceTree = "<group>";
 		};
 		C0B8B24D2821762C009EDED4 = {
@@ -317,6 +312,7 @@
 				C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */,
 				C0C8F9E62843EF250024782B /* Video.swift in Sources */,
 				C0B8B27128217FA6009EDED4 /* Date.swift in Sources */,
+				C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */,
 				C0C8F9EA2843F10D0024782B /* VideoCardView.swift in Sources */,
 				C0CEC5AE2838303F0028C187 /* PhotoCacheManager.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
