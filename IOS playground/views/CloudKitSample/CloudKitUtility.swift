@@ -9,6 +9,12 @@ import Foundation
 import CloudKit
 import Combine
 
+
+protocol CloudKitableProtocol {
+    init?(record: CKRecord)
+    var record: CKRecord { get }
+}
+
 class CloudKitUtility {
     
     enum CloudKitError: String, LocalizedError {
@@ -20,8 +26,6 @@ class CloudKitUtility {
         case ICloudCouldNotFetchICloudUserRecordID
         case ICloudCouldNotDiscoverUser
     }
-    
-    
     
 }
 

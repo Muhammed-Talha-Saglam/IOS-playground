@@ -9,10 +9,6 @@ import SwiftUI
 import CloudKit
 import Combine
 
-protocol CloudKitableProtocol {
-    init?(record: CKRecord)
-    var record: CKRecord { get }
-}
 
 struct FruitModel: Hashable, CloudKitableProtocol {
     let name: String

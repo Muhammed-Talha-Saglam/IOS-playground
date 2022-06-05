@@ -8,6 +8,8 @@
 import Foundation
 import CoreData
 
+// Core Data Manager Class
+
 class PortfolioDataService {
     
     private let container: NSPersistentContainer
@@ -28,7 +30,7 @@ class PortfolioDataService {
     
     private func getPortfolio() {
         let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
-
+        
         do {
             savedEntities = try container.viewContext.fetch(request)
         } catch let error {
