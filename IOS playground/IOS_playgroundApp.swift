@@ -11,7 +11,7 @@ import SwiftUI
 struct IOS_playgroundApp: App {
     var body: some Scene {
         WindowGroup {
-            YoutubeHomeView()
+            LocationsView()
         }
     }
 }
