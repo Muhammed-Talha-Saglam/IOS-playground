@@ -18,6 +18,8 @@
 		C026ED2F28538D62006C7BB3 /* DownloadImageAsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026ED2E28538D62006C7BB3 /* DownloadImageAsyncView.swift */; };
 		C026ED312853A3D5006C7BB3 /* AsyncAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026ED302853A3D5006C7BB3 /* AsyncAwaitView.swift */; };
 		C026ED332853AAA1006C7BB3 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026ED322853AAA1006C7BB3 /* TaskView.swift */; };
+		C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */; };
+		C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A7285F65B900483630 /* ExtensionsView.swift */; };
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
@@ -78,6 +80,8 @@
 		C026ED2E28538D62006C7BB3 /* DownloadImageAsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncView.swift; sourceTree = "<group>"; };
 		C026ED302853A3D5006C7BB3 /* AsyncAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitView.swift; sourceTree = "<group>"; };
 		C026ED322853AAA1006C7BB3 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSlideOutMenuView.swift; sourceTree = "<group>"; };
+		C02744A7285F65B900483630 /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */,
 				C0B9DFC42843A00E00328E11 /* UIViewControllerRepresentableSample.swift */,
 				C0728332284A7CF500DC3BE5 /* FuturesView.swift */,
+				C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				C0B8B26F28217FA6009EDED4 /* UIApplication.swift */,
 				C0B8B27028217FA6009EDED4 /* Color.swift */,
 				C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */,
+				C02744A7285F65B900483630 /* ExtensionsView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,11 +465,13 @@
 				C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */,
 				C0CEC5AE2838303F0028C187 /* PhotoCacheManager.swift in Sources */,
 				C026ED312853A3D5006C7BB3 /* AsyncAwaitView.swift in Sources */,
+				C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
+				C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */,
 				C0C8F9F0284406E00024782B /* VideoPlayerViewModel.swift in Sources */,
 				C0B8B27428217FA6009EDED4 /* Double.swift in Sources */,
 				C022DE79284B4BD900EB1008 /* CloudKitCRUDView.swift in Sources */,
