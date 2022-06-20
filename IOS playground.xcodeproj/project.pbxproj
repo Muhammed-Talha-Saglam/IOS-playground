@@ -65,6 +65,9 @@
 		C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D669232850FAF700013778 /* LocationPreviewView.swift */; };
 		C0EB86822822910800065991 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB86802822910800065991 /* PortfolioContainer.xcdatamodeld */; };
 		C0EB86842822917800065991 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB86832822917800065991 /* PortfolioDataService.swift */; };
+		C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D52860E233007A6529 /* NotificationsListView.swift */; };
+		C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */; };
+		C0ED10DA2860FC5B007A6529 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D92860FC5B007A6529 /* LocalNotification.swift */; };
 		C0FF6237285A382100CF5251 /* AsynPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF6236285A382100CF5251 /* AsynPublisherView.swift */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +131,9 @@
 		C0D669232850FAF700013778 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		C0EB86812822910800065991 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		C0EB86832822917800065991 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
+		C0ED10D52860E233007A6529 /* NotificationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListView.swift; sourceTree = "<group>"; };
+		C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		C0ED10D92860FC5B007A6529 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		C0FF6236285A382100CF5251 /* AsynPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynPublisherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +151,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C0ED10D42860E217007A6529 /* notification */,
 				C026ED292853869C006C7BB3 /* SwiftConcurrency */,
 				C0D669142850E26A00013778 /* MapKitSample */,
 				C022DE75284A863900EB1008 /* CloudKitSample */,
@@ -360,6 +367,16 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		C0ED10D42860E217007A6529 /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				C0ED10D52860E233007A6529 /* NotificationsListView.swift */,
+				C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */,
+				C0ED10D92860FC5B007A6529 /* LocalNotification.swift */,
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,11 +460,13 @@
 				C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */,
 				C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */,
 				C0D6691F2850E6C800013778 /* LocationsViewModel.swift in Sources */,
+				C0ED10DA2860FC5B007A6529 /* LocalNotification.swift in Sources */,
 				C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */,
 				C0D669162850E28200013778 /* LocationsDataService.swift in Sources */,
 				C0B8B25A2821762C009EDED4 /* IOS_playgroundApp.swift in Sources */,
 				C0B8B269282176B1009EDED4 /* LocalFileManager.swift in Sources */,
 				C084E667285501040046C2A3 /* ActorsView.swift in Sources */,
+				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
 				C0D6691D2850E4E900013778 /* LocationsView.swift in Sources */,
 				C0B9DFC52843A00E00328E11 /* UIViewControllerRepresentableSample.swift in Sources */,
 				C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */,
@@ -468,6 +487,7 @@
 				C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
+				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
