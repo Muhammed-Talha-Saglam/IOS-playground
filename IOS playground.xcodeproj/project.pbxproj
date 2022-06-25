@@ -21,6 +21,7 @@
 		C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */; };
 		C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A7285F65B900483630 /* ExtensionsView.swift */; };
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
+		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
 		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
@@ -86,6 +87,7 @@
 		C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSlideOutMenuView.swift; sourceTree = "<group>"; };
 		C02744A7285F65B900483630 /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
+		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
 		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				C0B9DFC42843A00E00328E11 /* UIViewControllerRepresentableSample.swift */,
 				C0728332284A7CF500DC3BE5 /* FuturesView.swift */,
 				C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */,
+				C040430328676A46001F65CF /* CarouselSliderView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				C0FF6237285A382100CF5251 /* AsynPublisherView.swift in Sources */,
 				C022DE77284A867400EB1008 /* CloudKitUserView.swift in Sources */,
 				C0C3733128524A5400294DA9 /* LocationDetailView.swift in Sources */,
+				C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */,
 				C026ED332853AAA1006C7BB3 /* TaskView.swift in Sources */,
 				C0C8F9EA2843F10D0024782B /* VideoCardView.swift in Sources */,
 				C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */,
