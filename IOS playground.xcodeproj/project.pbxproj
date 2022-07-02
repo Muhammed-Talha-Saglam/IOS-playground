@@ -10,6 +10,7 @@
 		C00E20632857A882008C648E /* SendableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E20622857A882008C648E /* SendableView.swift */; };
 		C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012EC4D28395CE600E58F15 /* ViewStyles.swift */; };
 		C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012EC50283973C900E58F15 /* AnyTransitionView.swift */; };
+		C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F30072870C8D900883294 /* ResponsiveView.swift */; };
 		C022DE77284A867400EB1008 /* CloudKitUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022DE76284A867400EB1008 /* CloudKitUserView.swift */; };
 		C022DE79284B4BD900EB1008 /* CloudKitCRUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022DE78284B4BD900EB1008 /* CloudKitCRUDView.swift */; };
 		C022DE7B284B678800EB1008 /* CloudKitPushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022DE7A284B678800EB1008 /* CloudKitPushNotificationView.swift */; };
@@ -20,6 +21,7 @@
 		C026ED332853AAA1006C7BB3 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026ED322853AAA1006C7BB3 /* TaskView.swift */; };
 		C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */; };
 		C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A7285F65B900483630 /* ExtensionsView.swift */; };
+		C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */; };
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
@@ -76,6 +78,7 @@
 		C00E20622857A882008C648E /* SendableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableView.swift; sourceTree = "<group>"; };
 		C012EC4D28395CE600E58F15 /* ViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyles.swift; sourceTree = "<group>"; };
 		C012EC50283973C900E58F15 /* AnyTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionView.swift; sourceTree = "<group>"; };
+		C01F30072870C8D900883294 /* ResponsiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView.swift; sourceTree = "<group>"; };
 		C022DE76284A867400EB1008 /* CloudKitUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserView.swift; sourceTree = "<group>"; };
 		C022DE78284B4BD900EB1008 /* CloudKitCRUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUDView.swift; sourceTree = "<group>"; };
 		C022DE7A284B678800EB1008 /* CloudKitPushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationView.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		C026ED322853AAA1006C7BB3 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSlideOutMenuView.swift; sourceTree = "<group>"; };
 		C02744A7285F65B900483630 /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
+		C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSwiftUIValueFromUIKit.swift; sourceTree = "<group>"; };
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				C0728332284A7CF500DC3BE5 /* FuturesView.swift */,
 				C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */,
 				C040430328676A46001F65CF /* CarouselSliderView.swift */,
+				C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */,
+				C01F30072870C8D900883294 /* ResponsiveView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 			files = (
 				C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */,
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
+				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
 				C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */,
 				C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */,
 				C0B8B27328217FA6009EDED4 /* String.swift in Sources */,
@@ -507,6 +514,7 @@
 				C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */,
 				C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */,
 				C022DE7B284B678800EB1008 /* CloudKitPushNotificationView.swift in Sources */,
+				C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */,
 				C0EB86842822917800065991 /* PortfolioDataService.swift in Sources */,
 				C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */,
 				C00E20632857A882008C648E /* SendableView.swift in Sources */,
