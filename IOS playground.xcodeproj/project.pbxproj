@@ -25,6 +25,7 @@
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
+		C06BB03F287A02B9008F8880 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BB03E287A02B8008F8880 /* NextView.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
 		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
 		C084E667285501040046C2A3 /* ActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084E666285501040046C2A3 /* ActorsView.swift */; };
@@ -93,6 +94,7 @@
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
+		C06BB03E287A02B8008F8880 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
 		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
 		C084E666285501040046C2A3 /* ActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsView.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 		C0ED10D42860E217007A6529 /* notification */ = {
 			isa = PBXGroup;
 			children = (
+				C06BB03E287A02B8008F8880 /* NextView.swift */,
 				C0ED10D52860E233007A6529 /* NotificationsListView.swift */,
 				C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */,
 				C0ED10D92860FC5B007A6529 /* LocalNotification.swift */,
@@ -513,6 +516,7 @@
 				C084E6692855041F0046C2A3 /* GlobalActorView.swift in Sources */,
 				C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */,
 				C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */,
+				C06BB03F287A02B9008F8880 /* NextView.swift in Sources */,
 				C022DE7B284B678800EB1008 /* CloudKitPushNotificationView.swift in Sources */,
 				C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */,
 				C0EB86842822917800065991 /* PortfolioDataService.swift in Sources */,
