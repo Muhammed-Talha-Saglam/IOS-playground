@@ -145,7 +145,7 @@ struct CarouselBodyView: View {
 
 struct ScrollViewOffsetModifier: ViewModifier {
     
-    var anchorPoint: Anchor = .top
+    var anchorPoint: AnchorCarousel = .top
     @Binding var offset: CGFloat
     
     func body(content: Content) -> some View {
@@ -175,7 +175,7 @@ struct ScrollViewOffsetModifier: ViewModifier {
 }
 
 
-enum Anchor {
+enum AnchorCarousel {
     case top
     case bottom
     case leading
