@@ -48,6 +48,7 @@ struct ChatView: View {
                     }
                 }
                 .padding()
+
             }
             .navigationTitle("Transitions")
         }

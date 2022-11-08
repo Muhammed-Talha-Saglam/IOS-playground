@@ -25,9 +25,11 @@
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
+		C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */; };
 		C0637310287B549000D03A73 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063730F287B549000D03A73 /* Message.swift */; };
 		C0637312287B551200D03A73 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637311287B551200D03A73 /* ChatView.swift */; };
 		C0637314287B570300D03A73 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637313287B570300D03A73 /* BoundsPreference.swift */; };
+		C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */; };
 		C06BB03F287A02B9008F8880 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BB03E287A02B8008F8880 /* NextView.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
 		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
@@ -38,6 +40,7 @@
 		C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */; };
 		C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */; };
 		C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */; };
+		C0A7C6A9287C93E2003062C6 /* DraggableBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */; };
 		C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */; };
 		C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B30D0B2854CF1100735443 /* AsyncLetView.swift */; };
 		C0B30D0E2854D49300735443 /* TaskGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B30D0D2854D49300735443 /* TaskGroupView.swift */; };
@@ -97,9 +100,11 @@
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
+		C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonModifier.swift; sourceTree = "<group>"; };
 		C063730F287B549000D03A73 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C0637311287B551200D03A73 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C0637313287B570300D03A73 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
+		C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedNumberText.swift; sourceTree = "<group>"; };
 		C06BB03E287A02B8008F8880 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
 		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 		C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesView.swift; sourceTree = "<group>"; };
 		C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataView.swift; sourceTree = "<group>"; };
+		C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableBottomSheetView.swift; sourceTree = "<group>"; };
 		C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesView.swift; sourceTree = "<group>"; };
 		C0B30D0B2854CF1100735443 /* AsyncLetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetView.swift; sourceTree = "<group>"; };
 		C0B30D0D2854D49300735443 /* TaskGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupView.swift; sourceTree = "<group>"; };
@@ -186,6 +192,8 @@
 				C040430328676A46001F65CF /* CarouselSliderView.swift */,
 				C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */,
 				C01F30072870C8D900883294 /* ResponsiveView.swift */,
+				C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */,
+				C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -219,6 +227,14 @@
 			path = SwiftConcurrency;
 			sourceTree = "<group>";
 		};
+		C05A5AEB291AD1C000D02CBC /* modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */,
+			);
+			path = modifiers;
+			sourceTree = "<group>";
+		};
 		C063730D287B546A00D03A73 /* chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +264,7 @@
 		C0B8B2582821762C009EDED4 /* IOS playground */ = {
 			isa = PBXGroup;
 			children = (
+				C05A5AEB291AD1C000D02CBC /* modifiers */,
 				C012EC4F283973AB00E58F15 /* views */,
 				C0EB867F282290F000065991 /* model */,
 				C0B8B26A28217FA6009EDED4 /* Extensions */,
@@ -477,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */,
 				C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */,
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
 				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
@@ -502,6 +520,7 @@
 				C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */,
 				C026ED2F28538D62006C7BB3 /* DownloadImageAsyncView.swift in Sources */,
 				C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */,
+				C0A7C6A9287C93E2003062C6 /* DraggableBottomSheetView.swift in Sources */,
 				C0C8F9E62843EF250024782B /* Video.swift in Sources */,
 				C0D669192850E32A00013778 /* Location.swift in Sources */,
 				C0637314287B570300D03A73 /* BoundsPreference.swift in Sources */,
@@ -516,6 +535,7 @@
 				C0C8F9EA2843F10D0024782B /* VideoCardView.swift in Sources */,
 				C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */,
 				C0CEC5AE2838303F0028C187 /* PhotoCacheManager.swift in Sources */,
+				C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */,
 				C026ED312853A3D5006C7BB3 /* AsyncAwaitView.swift in Sources */,
 				C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
