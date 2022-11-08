@@ -30,6 +30,8 @@
 		C0637310287B549000D03A73 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063730F287B549000D03A73 /* Message.swift */; };
 		C0637312287B551200D03A73 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637311287B551200D03A73 /* ChatView.swift */; };
 		C0637314287B570300D03A73 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637313287B570300D03A73 /* BoundsPreference.swift */; };
+		C065866A291AEB8F00D1E57F /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0658669291AEB8F00D1E57F /* Coffee.swift */; };
+		C065866C291AED1E00D1E57F /* CoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065866B291AED1E00D1E57F /* CoffeeApp.swift */; };
 		C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */; };
 		C06BB03F287A02B9008F8880 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BB03E287A02B8008F8880 /* NextView.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
@@ -106,6 +108,8 @@
 		C063730F287B549000D03A73 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C0637311287B551200D03A73 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C0637313287B570300D03A73 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
+		C0658669291AEB8F00D1E57F /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		C065866B291AED1E00D1E57F /* CoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeApp.swift; sourceTree = "<group>"; };
 		C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedNumberText.swift; sourceTree = "<group>"; };
 		C06BB03E287A02B8008F8880 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C0658668291AEB6E00D1E57F /* coffeeApp */,
 				C063730D287B546A00D03A73 /* chat */,
 				C0ED10D42860E217007A6529 /* notification */,
 				C026ED292853869C006C7BB3 /* SwiftConcurrency */,
@@ -245,6 +250,15 @@
 				C0637313287B570300D03A73 /* BoundsPreference.swift */,
 			);
 			path = chat;
+			sourceTree = "<group>";
+		};
+		C0658668291AEB6E00D1E57F /* coffeeApp */ = {
+			isa = PBXGroup;
+			children = (
+				C0658669291AEB8F00D1E57F /* Coffee.swift */,
+				C065866B291AED1E00D1E57F /* CoffeeApp.swift */,
+			);
+			path = coffeeApp;
 			sourceTree = "<group>";
 		};
 		C0B8B24D2821762C009EDED4 = {
@@ -500,6 +514,7 @@
 				C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */,
 				C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */,
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
+				C065866C291AED1E00D1E57F /* CoffeeApp.swift in Sources */,
 				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
 				C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */,
 				C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */,
@@ -518,6 +533,7 @@
 				C0B8B25A2821762C009EDED4 /* IOS_playgroundApp.swift in Sources */,
 				C0B8B269282176B1009EDED4 /* LocalFileManager.swift in Sources */,
 				C084E667285501040046C2A3 /* ActorsView.swift in Sources */,
+				C065866A291AEB8F00D1E57F /* Coffee.swift in Sources */,
 				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
 				C0D6691D2850E4E900013778 /* LocationsView.swift in Sources */,
 				C0B9DFC52843A00E00328E11 /* UIViewControllerRepresentableSample.swift in Sources */,
