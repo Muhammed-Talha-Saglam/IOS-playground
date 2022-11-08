@@ -11,9 +11,9 @@ import SwiftUI
 struct DismissButtonModifier : ViewModifier {
     
     @Environment(\.dismiss) var dismiss
-    
+    var withScroll: Bool
     func body(content: Content) -> some View {
-        ZStack {
+        let view = ZStack {
             Color.clear
                 .overlay(alignment: .topTrailing) {
                     Button {
@@ -26,11 +26,19 @@ struct DismissButtonModifier : ViewModifier {
                 }
             content
         }
+        if withScroll {
+            ScrollView {
+                view
+            }
+        } else {
+            view
+        }
+        
     }
 }
 
 extension View {
-    func withDismissButton() -> some View {
-        self.modifier(DismissButtonModifier())
+    func withDismissButton(withScroll: Bool = false) -> some View {
+        self.modifier(DismissButtonModifier(withScroll: withScroll))
     }
 }

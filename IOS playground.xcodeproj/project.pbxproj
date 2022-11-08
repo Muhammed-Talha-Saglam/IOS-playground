@@ -26,6 +26,7 @@
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
 		C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */; };
+		C05A5AEF291ADF4B00D02CBC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */; };
 		C0637310287B549000D03A73 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063730F287B549000D03A73 /* Message.swift */; };
 		C0637312287B551200D03A73 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637311287B551200D03A73 /* ChatView.swift */; };
 		C0637314287B570300D03A73 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637313287B570300D03A73 /* BoundsPreference.swift */; };
@@ -101,6 +102,7 @@
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
 		C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonModifier.swift; sourceTree = "<group>"; };
+		C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C063730F287B549000D03A73 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C0637311287B551200D03A73 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C0637313287B570300D03A73 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				C0B8B268282176B1009EDED4 /* LocalFileManager.swift */,
 				C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */,
 				C0CEC5AD2838303F0028C187 /* PhotoCacheManager.swift */,
+				C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				C0ED10DA2860FC5B007A6529 /* LocalNotification.swift in Sources */,
 				C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */,
 				C0D669162850E28200013778 /* LocationsDataService.swift in Sources */,
+				C05A5AEF291ADF4B00D02CBC /* ImagePicker.swift in Sources */,
 				C0B8B25A2821762C009EDED4 /* IOS_playgroundApp.swift in Sources */,
 				C0B8B269282176B1009EDED4 /* LocalFileManager.swift in Sources */,
 				C084E667285501040046C2A3 /* ActorsView.swift in Sources */,
@@ -620,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -675,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
