@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00B6F8C291C310900A1EA50 /* WalletAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B6F8B291C310900A1EA50 /* WalletAppView.swift */; };
+		C00B6F8E291C372C00A1EA50 /* RollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B6F8D291C372C00A1EA50 /* RollingText.swift */; };
 		C00E20632857A882008C648E /* SendableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E20622857A882008C648E /* SendableView.swift */; };
 		C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012EC4D28395CE600E58F15 /* ViewStyles.swift */; };
 		C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012EC50283973C900E58F15 /* AnyTransitionView.swift */; };
@@ -85,6 +87,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C00B6F8B291C310900A1EA50 /* WalletAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppView.swift; sourceTree = "<group>"; };
+		C00B6F8D291C372C00A1EA50 /* RollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingText.swift; sourceTree = "<group>"; };
 		C00E20622857A882008C648E /* SendableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableView.swift; sourceTree = "<group>"; };
 		C012EC4D28395CE600E58F15 /* ViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyles.swift; sourceTree = "<group>"; };
 		C012EC50283973C900E58F15 /* AnyTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionView.swift; sourceTree = "<group>"; };
@@ -174,9 +178,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00B6F8A291C2FC500A1EA50 /* walletApp */ = {
+			isa = PBXGroup;
+			children = (
+				C00B6F8B291C310900A1EA50 /* WalletAppView.swift */,
+			);
+			path = walletApp;
+			sourceTree = "<group>";
+		};
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C00B6F8A291C2FC500A1EA50 /* walletApp */,
 				C0658668291AEB6E00D1E57F /* coffeeApp */,
 				C063730D287B546A00D03A73 /* chat */,
 				C0ED10D42860E217007A6529 /* notification */,
@@ -201,6 +214,7 @@
 				C01F30072870C8D900883294 /* ResponsiveView.swift */,
 				C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */,
 				C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */,
+				C00B6F8D291C372C00A1EA50 /* RollingText.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -573,12 +587,14 @@
 				C0B30D0E2854D49300735443 /* TaskGroupView.swift in Sources */,
 				C022DE7D284B72A800EB1008 /* CloudKitUtility.swift in Sources */,
 				C0C8F9EE2843F5F70024782B /* VideoPlayerView.swift in Sources */,
+				C00B6F8E291C372C00A1EA50 /* RollingText.swift in Sources */,
 				C084E6692855041F0046C2A3 /* GlobalActorView.swift in Sources */,
 				C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */,
 				C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */,
 				C06BB03F287A02B9008F8880 /* NextView.swift in Sources */,
 				C022DE7B284B678800EB1008 /* CloudKitPushNotificationView.swift in Sources */,
 				C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */,
+				C00B6F8C291C310900A1EA50 /* WalletAppView.swift in Sources */,
 				C0EB86842822917800065991 /* PortfolioDataService.swift in Sources */,
 				C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */,
 				C00E20632857A882008C648E /* SendableView.swift in Sources */,
