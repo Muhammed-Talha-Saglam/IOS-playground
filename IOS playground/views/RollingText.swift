@@ -12,6 +12,7 @@ struct RollingText: View {
     var font: Font = .largeTitle
     var weight: Font.Weight = .regular
     @Binding var value: Int
+    var animationDuration: CGFloat = 0.15
     // MARK: Animation Properties
     @State var animationRange: [Int] = []
     
@@ -65,7 +66,7 @@ struct RollingText: View {
             } else {
                 // Removing extra range
                 for _ in 0..<(-extra) {
-                    withAnimation(.easeIn(duration: 0.1)) {
+                   let _ = withAnimation(.easeIn(duration: 0.1)) {
                         animationRange.removeLast()
                     }
                 }
@@ -92,7 +93,7 @@ struct RollingText: View {
             // Total = 1.5
             fraction = (fraction > 0.5 ? 0.5 : fraction)
             
-            withAnimation(.interactiveSpring(response: 0.8, dampingFraction: 1 + fraction, blendDuration: 1 + fraction)) {
+            withAnimation(.interactiveSpring(response: animationDuration, dampingFraction: 1 + fraction, blendDuration: 1 + fraction)) {
                 animationRange[index] = (String(value) as    NSString).integerValue
             }
         }
