@@ -30,6 +30,8 @@
 		C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */; };
 		C05A5AEF291ADF4B00D02CBC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */; };
 		C0627F8B291EAFCF00DDECFF /* AppStorageCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0627F8A291EAFCF00DDECFF /* AppStorageCodable.swift */; };
+		C0627F8E291ECC1D00DDECFF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0627F8D291ECC1D00DDECFF /* Card.swift */; };
+		C0627F90291ECC7B00DDECFF /* AnimatedCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0627F8F291ECC7B00DDECFF /* AnimatedCarousel.swift */; };
 		C0637310287B549000D03A73 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063730F287B549000D03A73 /* Message.swift */; };
 		C0637312287B551200D03A73 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637311287B551200D03A73 /* ChatView.swift */; };
 		C0637314287B570300D03A73 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0637313287B570300D03A73 /* BoundsPreference.swift */; };
@@ -111,6 +113,8 @@
 		C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonModifier.swift; sourceTree = "<group>"; };
 		C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C0627F8A291EAFCF00DDECFF /* AppStorageCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageCodable.swift; sourceTree = "<group>"; };
+		C0627F8D291ECC1D00DDECFF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C0627F8F291ECC7B00DDECFF /* AnimatedCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCarousel.swift; sourceTree = "<group>"; };
 		C063730F287B549000D03A73 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C0637311287B551200D03A73 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C0637313287B570300D03A73 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C0627F8C291ECC0300DDECFF /* animatedCarousel */,
 				C00B6F8A291C2FC500A1EA50 /* walletApp */,
 				C0658668291AEB6E00D1E57F /* coffeeApp */,
 				C063730D287B546A00D03A73 /* chat */,
@@ -256,6 +261,15 @@
 				C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */,
 			);
 			path = modifiers;
+			sourceTree = "<group>";
+		};
+		C0627F8C291ECC0300DDECFF /* animatedCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C0627F8D291ECC1D00DDECFF /* Card.swift */,
+				C0627F8F291ECC7B00DDECFF /* AnimatedCarousel.swift */,
+			);
+			path = animatedCarousel;
 			sourceTree = "<group>";
 		};
 		C063730D287B546A00D03A73 /* chat */ = {
@@ -576,6 +590,7 @@
 				C026ED312853A3D5006C7BB3 /* AsyncAwaitView.swift in Sources */,
 				C0627F8B291EAFCF00DDECFF /* AppStorageCodable.swift in Sources */,
 				C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */,
+				C0627F90291ECC7B00DDECFF /* AnimatedCarousel.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
@@ -587,6 +602,7 @@
 				C0C8F9F0284406E00024782B /* VideoPlayerViewModel.swift in Sources */,
 				C0B8B27428217FA6009EDED4 /* Double.swift in Sources */,
 				C022DE79284B4BD900EB1008 /* CloudKitCRUDView.swift in Sources */,
+				C0627F8E291ECC1D00DDECFF /* Card.swift in Sources */,
 				C0B8B27628217FA6009EDED4 /* Color.swift in Sources */,
 				C0B30D0E2854D49300735443 /* TaskGroupView.swift in Sources */,
 				C022DE7D284B72A800EB1008 /* CloudKitUtility.swift in Sources */,
