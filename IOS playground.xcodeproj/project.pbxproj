@@ -41,6 +41,8 @@
 		C06BB03F287A02B9008F8880 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06BB03E287A02B8008F8880 /* NextView.swift */; };
 		C0728331284A5F1800DC3BE5 /* AdvancedCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */; };
 		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
+		C081591F2923F32B00D9B08D /* ParallaxCardEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081591E2923F32B00D9B08D /* ParallaxCardEffectView.swift */; };
+		C08159212924248D00D9B08D /* NavigationStataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08159202924248D00D9B08D /* NavigationStataManager.swift */; };
 		C084E667285501040046C2A3 /* ActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084E666285501040046C2A3 /* ActorsView.swift */; };
 		C084E6692855041F0046C2A3 /* GlobalActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084E6682855041F0046C2A3 /* GlobalActorView.swift */; };
 		C087DFB9291FFC5B00C58D48 /* BookAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFB8291FFC5B00C58D48 /* BookAppView.swift */; };
@@ -131,6 +133,8 @@
 		C06BB03E287A02B8008F8880 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		C0728330284A5F1800DC3BE5 /* AdvancedCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineView.swift; sourceTree = "<group>"; };
 		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
+		C081591E2923F32B00D9B08D /* ParallaxCardEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCardEffectView.swift; sourceTree = "<group>"; };
+		C08159202924248D00D9B08D /* NavigationStataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStataManager.swift; sourceTree = "<group>"; };
 		C084E666285501040046C2A3 /* ActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsView.swift; sourceTree = "<group>"; };
 		C084E6682855041F0046C2A3 /* GlobalActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActorView.swift; sourceTree = "<group>"; };
 		C087DFB8291FFC5B00C58D48 /* BookAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppView.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C081591D2923F2DB00D9B08D /* parallaxEffect */,
 				C0C0512B2922BC11005667A0 /* boomerangCardEffect */,
 				C087DFB7291FFC3600C58D48 /* bookAppAnimation */,
 				C0627F8C291ECC0300DDECFF /* animatedCarousel */,
@@ -307,6 +312,14 @@
 			path = coffeeApp;
 			sourceTree = "<group>";
 		};
+		C081591D2923F2DB00D9B08D /* parallaxEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C081591E2923F32B00D9B08D /* ParallaxCardEffectView.swift */,
+			);
+			path = parallaxEffect;
+			sourceTree = "<group>";
+		};
 		C087DFB7291FFC3600C58D48 /* bookAppAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +387,7 @@
 				C0CEC5AD2838303F0028C187 /* PhotoCacheManager.swift */,
 				C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */,
 				C0627F8A291EAFCF00DDECFF /* AppStorageCodable.swift */,
+				C08159202924248D00D9B08D /* NavigationStataManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -592,6 +606,7 @@
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
 				C065866C291AED1E00D1E57F /* CoffeeApp.swift in Sources */,
 				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
+				C08159212924248D00D9B08D /* NavigationStataManager.swift in Sources */,
 				C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */,
 				C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */,
 				C087DFC0292112D600C58D48 /* APIService.swift in Sources */,
@@ -604,6 +619,7 @@
 				C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */,
 				C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */,
 				C0D6691F2850E6C800013778 /* LocationsViewModel.swift in Sources */,
+				C081591F2923F32B00D9B08D /* ParallaxCardEffectView.swift in Sources */,
 				C0ED10DA2860FC5B007A6529 /* LocalNotification.swift in Sources */,
 				C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */,
 				C0D669162850E28200013778 /* LocationsDataService.swift in Sources */,
