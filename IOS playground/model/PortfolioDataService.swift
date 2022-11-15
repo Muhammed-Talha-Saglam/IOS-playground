@@ -10,9 +10,9 @@ import CoreData
 
 // Core Data Manager Class
 
-class PortfolioDataService {
+class PortfolioDataService: ObservableObject {
     
-    private let container: NSPersistentContainer
+    let container: NSPersistentContainer
     private let containerName = "PortfolioContainer"
     private let entityName = "PortfolioEntity"
     
@@ -43,6 +43,7 @@ class PortfolioDataService {
         entity.counID = UUID().uuidString
         entity.amount = Double.random(in: 0...100)
         applyChanges()
+        save()
     }
     
     func update(entity: PortfolioEntity, amount: Double) {

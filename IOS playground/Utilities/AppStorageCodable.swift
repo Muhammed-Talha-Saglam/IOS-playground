@@ -5,10 +5,12 @@
 //  Created by Muhammed Talha Sağlam on 11.11.2022.
 //
 
+// This is an example of how to use any Data class in AppStorage.
+
 import SwiftUI
 
-typealias PinnedRecipes = [UUID]
 
+typealias PinnedRecipes = [UUID]
 extension PinnedRecipes: RawRepresentable {
     public init?(rawValue: String) {
         guard let data = rawValue.data(using: .utf8),

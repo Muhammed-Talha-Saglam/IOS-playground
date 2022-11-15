@@ -43,6 +43,10 @@
 		C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0728332284A7CF500DC3BE5 /* FuturesView.swift */; };
 		C084E667285501040046C2A3 /* ActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084E666285501040046C2A3 /* ActorsView.swift */; };
 		C084E6692855041F0046C2A3 /* GlobalActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084E6682855041F0046C2A3 /* GlobalActorView.swift */; };
+		C087DFB9291FFC5B00C58D48 /* BookAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFB8291FFC5B00C58D48 /* BookAppView.swift */; };
+		C087DFBB291FFF3600C58D48 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBA291FFF3600C58D48 /* Book.swift */; };
+		C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBC292009F300C58D48 /* IsometricView.swift */; };
+		C087DFC0292112D600C58D48 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBF292112D600C58D48 /* APIService.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
 		C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */; };
@@ -65,6 +69,9 @@
 		C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B8B26F28217FA6009EDED4 /* UIApplication.swift */; };
 		C0B8B27628217FA6009EDED4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B8B27028217FA6009EDED4 /* Color.swift */; };
 		C0B9DFC52843A00E00328E11 /* UIViewControllerRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B9DFC42843A00E00328E11 /* UIViewControllerRepresentableSample.swift */; };
+		C0C0512A2922A2C3005667A0 /* PortfolioDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C051292922A2C3005667A0 /* PortfolioDataView.swift */; };
+		C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0512C2922BC34005667A0 /* BoomerangCard.swift */; };
+		C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0512E2922BCD1005667A0 /* BoomerangCardView.swift */; };
 		C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3732E2852406300294DA9 /* LocationMapAnnotationView.swift */; };
 		C0C3733128524A5400294DA9 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3733028524A5400294DA9 /* LocationDetailView.swift */; };
 		C0C8F9DF2843EECC0024782B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0C8F9DE2843EECC0024782B /* video.mp4 */; };
@@ -126,6 +133,10 @@
 		C0728332284A7CF500DC3BE5 /* FuturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesView.swift; sourceTree = "<group>"; };
 		C084E666285501040046C2A3 /* ActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsView.swift; sourceTree = "<group>"; };
 		C084E6682855041F0046C2A3 /* GlobalActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActorView.swift; sourceTree = "<group>"; };
+		C087DFB8291FFC5B00C58D48 /* BookAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppView.swift; sourceTree = "<group>"; };
+		C087DFBA291FFF3600C58D48 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C087DFBC292009F300C58D48 /* IsometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricView.swift; sourceTree = "<group>"; };
+		C087DFBF292112D600C58D48 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
 		C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
@@ -149,6 +160,9 @@
 		C0B8B26F28217FA6009EDED4 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		C0B8B27028217FA6009EDED4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C0B9DFC42843A00E00328E11 /* UIViewControllerRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableSample.swift; sourceTree = "<group>"; };
+		C0C051292922A2C3005667A0 /* PortfolioDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataView.swift; sourceTree = "<group>"; };
+		C0C0512C2922BC34005667A0 /* BoomerangCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomerangCard.swift; sourceTree = "<group>"; };
+		C0C0512E2922BCD1005667A0 /* BoomerangCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomerangCardView.swift; sourceTree = "<group>"; };
 		C0C3732E2852406300294DA9 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		C0C3733028524A5400294DA9 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		C0C8F9DE2843EECC0024782B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
@@ -195,6 +209,8 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C0C0512B2922BC11005667A0 /* boomerangCardEffect */,
+				C087DFB7291FFC3600C58D48 /* bookAppAnimation */,
 				C0627F8C291ECC0300DDECFF /* animatedCarousel */,
 				C00B6F8A291C2FC500A1EA50 /* walletApp */,
 				C0658668291AEB6E00D1E57F /* coffeeApp */,
@@ -291,6 +307,24 @@
 			path = coffeeApp;
 			sourceTree = "<group>";
 		};
+		C087DFB7291FFC3600C58D48 /* bookAppAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C087DFB8291FFC5B00C58D48 /* BookAppView.swift */,
+				C087DFBA291FFF3600C58D48 /* Book.swift */,
+				C087DFBC292009F300C58D48 /* IsometricView.swift */,
+			);
+			path = bookAppAnimation;
+			sourceTree = "<group>";
+		};
+		C087DFBE292112C800C58D48 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				C087DFBF292112D600C58D48 /* APIService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		C0B8B24D2821762C009EDED4 = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +344,7 @@
 		C0B8B2582821762C009EDED4 /* IOS playground */ = {
 			isa = PBXGroup;
 			children = (
+				C087DFBE292112C800C58D48 /* services */,
 				C05A5AEB291AD1C000D02CBC /* modifiers */,
 				C012EC4F283973AB00E58F15 /* views */,
 				C0EB867F282290F000065991 /* model */,
@@ -356,6 +391,15 @@
 				C02744A7285F65B900483630 /* ExtensionsView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0C0512B2922BC11005667A0 /* boomerangCardEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C0C0512C2922BC34005667A0 /* BoomerangCard.swift */,
+				C0C0512E2922BCD1005667A0 /* BoomerangCardView.swift */,
+			);
+			path = boomerangCardEffect;
 			sourceTree = "<group>";
 		};
 		C0C8F9DC2843EE4B0024782B /* YoutubeAnimation */ = {
@@ -456,6 +500,7 @@
 			children = (
 				C0EB86802822910800065991 /* PortfolioContainer.xcdatamodeld */,
 				C0EB86832822917800065991 /* PortfolioDataService.swift */,
+				C0C051292922A2C3005667A0 /* PortfolioDataView.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -549,10 +594,12 @@
 				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
 				C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */,
 				C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */,
+				C087DFC0292112D600C58D48 /* APIService.swift in Sources */,
 				C0B8B27328217FA6009EDED4 /* String.swift in Sources */,
 				C026ED2B285386E3006C7BB3 /* DoCatchTryThrowsSample.swift in Sources */,
 				C0B8B25C2821762C009EDED4 /* ContentView.swift in Sources */,
 				C0C8F9EC2843F5B30024782B /* MiniPlayerView.swift in Sources */,
+				C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */,
 				C0D669222850F32D00013778 /* LocationsListView.swift in Sources */,
 				C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */,
 				C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */,
@@ -566,6 +613,8 @@
 				C084E667285501040046C2A3 /* ActorsView.swift in Sources */,
 				C065866A291AEB8F00D1E57F /* Coffee.swift in Sources */,
 				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
+				C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */,
+				C087DFBB291FFF3600C58D48 /* Book.swift in Sources */,
 				C0D6691D2850E4E900013778 /* LocationsView.swift in Sources */,
 				C0B9DFC52843A00E00328E11 /* UIViewControllerRepresentableSample.swift in Sources */,
 				C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */,
@@ -586,6 +635,7 @@
 				C0C8F9EA2843F10D0024782B /* VideoCardView.swift in Sources */,
 				C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */,
 				C0CEC5AE2838303F0028C187 /* PhotoCacheManager.swift in Sources */,
+				C0C0512A2922A2C3005667A0 /* PortfolioDataView.swift in Sources */,
 				C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */,
 				C026ED312853A3D5006C7BB3 /* AsyncAwaitView.swift in Sources */,
 				C0627F8B291EAFCF00DDECFF /* AppStorageCodable.swift in Sources */,
@@ -594,6 +644,7 @@
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
+				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
@@ -603,6 +654,7 @@
 				C0B8B27428217FA6009EDED4 /* Double.swift in Sources */,
 				C022DE79284B4BD900EB1008 /* CloudKitCRUDView.swift in Sources */,
 				C0627F8E291ECC1D00DDECFF /* Card.swift in Sources */,
+				C087DFB9291FFC5B00C58D48 /* BookAppView.swift in Sources */,
 				C0B8B27628217FA6009EDED4 /* Color.swift in Sources */,
 				C0B30D0E2854D49300735443 /* TaskGroupView.swift in Sources */,
 				C022DE7D284B72A800EB1008 /* CloudKitUtility.swift in Sources */,
