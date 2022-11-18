@@ -51,6 +51,9 @@
 		C087DFC0292112D600C58D48 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBF292112D600C58D48 /* APIService.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
+		C09854FD292822DA004B5DB3 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */; };
+		C09854FF292823F5004B5DB3 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09854FE292823F5004B5DB3 /* CustomFont.swift */; };
+		C09855012928243F004B5DB3 /* Font+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09855002928243F004B5DB3 /* Font+Extention.swift */; };
 		C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */; };
 		C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */; };
 		C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */; };
@@ -143,6 +146,9 @@
 		C087DFBF292112D600C58D48 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
+		C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		C09854FE292823F5004B5DB3 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		C09855002928243F004B5DB3 /* Font+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extention.swift"; sourceTree = "<group>"; };
 		C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesView.swift; sourceTree = "<group>"; };
 		C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataView.swift; sourceTree = "<group>"; };
@@ -357,6 +363,7 @@
 		C0B8B2582821762C009EDED4 /* IOS playground */ = {
 			isa = PBXGroup;
 			children = (
+				C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */,
 				C087DFBE292112C800C58D48 /* services */,
 				C05A5AEB291AD1C000D02CBC /* modifiers */,
 				C012EC4F283973AB00E58F15 /* views */,
@@ -388,6 +395,7 @@
 				C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */,
 				C0627F8A291EAFCF00DDECFF /* AppStorageCodable.swift */,
 				C08159202924248D00D9B08D /* NavigationStataManager.swift */,
+				C09854FE292823F5004B5DB3 /* CustomFont.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -403,6 +411,7 @@
 				C0B8B27028217FA6009EDED4 /* Color.swift */,
 				C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */,
 				C02744A7285F65B900483630 /* ExtensionsView.swift */,
+				C09855002928243F004B5DB3 /* Font+Extention.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -591,6 +600,7 @@
 				C0B8B2612821762D009EDED4 /* Preview Assets.xcassets in Resources */,
 				C0C8F9DF2843EECC0024782B /* video.mp4 in Resources */,
 				C0B8B25E2821762D009EDED4 /* Assets.xcassets in Resources */,
+				C09854FD292822DA004B5DB3 /* Raleway-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09854FF292823F5004B5DB3 /* CustomFont.swift in Sources */,
 				C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */,
 				C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */,
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
@@ -663,6 +674,7 @@
 				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
+				C09855012928243F004B5DB3 /* Font+Extention.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
 				C0637310287B549000D03A73 /* Message.swift in Sources */,
 				C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */,
