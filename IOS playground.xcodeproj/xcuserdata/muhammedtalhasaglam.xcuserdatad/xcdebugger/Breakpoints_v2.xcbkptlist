@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B21D5B3B-3EAA-440E-903C-C42884BFFD70"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96C6C2D4-6A67-4843-97DC-70321456BCB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS playground/model/PortfolioDataView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "96C6C2D4-6A67-4843-97DC-70321456BCB1 - 2415899cab26fbba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOS_playground.PortfolioDataView.init() -&gt; IOS_playground.PortfolioDataView"
+                  moduleName = "IOS playground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammedtalhasaglam/Documents/IOS%20playground/IOS%20playground/model/PortfolioDataView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "96C6C2D4-6A67-4843-97DC-70321456BCB1 - 9938c4a979168b99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOS_playground.PortfolioDataView.init(viewContext: SwiftUI.Environment&lt;__C.NSManagedObjectContext&gt;) -&gt; IOS_playground.PortfolioDataView"
+                  moduleName = "IOS playground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammedtalhasaglam/Documents/IOS%20playground/IOS%20playground/model/PortfolioDataView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

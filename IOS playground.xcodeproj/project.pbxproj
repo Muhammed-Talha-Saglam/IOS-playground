@@ -57,6 +57,7 @@
 		C09D4A25284CD6F900F3D7AC /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */; };
 		C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */; };
 		C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */; };
+		C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7307C292955C300DD634A /* StickyHeaderView.swift */; };
 		C0A7C6A9287C93E2003062C6 /* DraggableBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */; };
 		C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */; };
 		C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B30D0B2854CF1100735443 /* AsyncLetView.swift */; };
@@ -152,6 +153,7 @@
 		C09D4A24284CD6F900F3D7AC /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		C0A3857A283A947700BB9D19 /* CustomCurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesView.swift; sourceTree = "<group>"; };
 		C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataView.swift; sourceTree = "<group>"; };
+		C0A7307C292955C300DD634A /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableBottomSheetView.swift; sourceTree = "<group>"; };
 		C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesView.swift; sourceTree = "<group>"; };
 		C0B30D0B2854CF1100735443 /* AsyncLetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */,
 				C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */,
 				C00B6F8D291C372C00A1EA50 /* RollingText.swift */,
+				C0A7307C292955C300DD634A /* StickyHeaderView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
+				C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */,
 				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
