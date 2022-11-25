@@ -121,7 +121,7 @@ struct CryptoWidgetEntryView : View {
     func MediumSizedWidget() -> some View {
         ZStack {
             Rectangle()
-                .fill(.black)
+                .fill(.black.opacity(0.8))
             
             VStack {
                 HStack {
