@@ -26,6 +26,8 @@
 		C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */; };
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
+		C0469A9229337FF10056B417 /* FlightAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0469A9129337FF10056B417 /* FlightAppContentView.swift */; };
+		C0469A942933805F0056B417 /* FlightAppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0469A932933805F0056B417 /* FlightAppHomeView.swift */; };
 		C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */; };
 		C05A5AED291AD1D700D02CBC /* DismissButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */; };
 		C05A5AEF291ADF4B00D02CBC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */; };
@@ -59,6 +61,7 @@
 		C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */; };
 		C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7307C292955C300DD634A /* StickyHeaderView.swift */; };
 		C0A7C6A9287C93E2003062C6 /* DraggableBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */; };
+		C0ABFF31293387BE00C0A2C3 /* FlightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */; };
 		C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */; };
 		C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B30D0B2854CF1100735443 /* AsyncLetView.swift */; };
 		C0B30D0E2854D49300735443 /* TaskGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B30D0D2854D49300735443 /* TaskGroupView.swift */; };
@@ -152,6 +155,8 @@
 		C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSwiftUIValueFromUIKit.swift; sourceTree = "<group>"; };
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
+		C0469A9129337FF10056B417 /* FlightAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAppContentView.swift; sourceTree = "<group>"; };
+		C0469A932933805F0056B417 /* FlightAppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAppHomeView.swift; sourceTree = "<group>"; };
 		C04E56DB284296C700D356F4 /* UIViewRepresentableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableSample.swift; sourceTree = "<group>"; };
 		C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonModifier.swift; sourceTree = "<group>"; };
 		C05A5AEE291ADF4B00D02CBC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -185,6 +190,7 @@
 		C0A3857C283AA6F800BB9D19 /* AnimatableDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataView.swift; sourceTree = "<group>"; };
 		C0A7307C292955C300DD634A /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableBottomSheetView.swift; sourceTree = "<group>"; };
+		C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCard.swift; sourceTree = "<group>"; };
 		C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesView.swift; sourceTree = "<group>"; };
 		C0B30D0B2854CF1100735443 /* AsyncLetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetView.swift; sourceTree = "<group>"; };
 		C0B30D0D2854D49300735443 /* TaskGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupView.swift; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C0469A9029337FAC0056B417 /* flightApp */,
 				C081591D2923F2DB00D9B08D /* parallaxEffect */,
 				C0C0512B2922BC11005667A0 /* boomerangCardEffect */,
 				C087DFB7291FFC3600C58D48 /* bookAppAnimation */,
@@ -329,6 +336,16 @@
 				C0FF6236285A382100CF5251 /* AsynPublisherView.swift */,
 			);
 			path = SwiftConcurrency;
+			sourceTree = "<group>";
+		};
+		C0469A9029337FAC0056B417 /* flightApp */ = {
+			isa = PBXGroup;
+			children = (
+				C0469A9129337FF10056B417 /* FlightAppContentView.swift */,
+				C0469A932933805F0056B417 /* FlightAppHomeView.swift */,
+				C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */,
+			);
+			path = flightApp;
 			sourceTree = "<group>";
 		};
 		C05A5AEB291AD1C000D02CBC /* modifiers */ = {
@@ -740,6 +757,7 @@
 				C05A5AEF291ADF4B00D02CBC /* ImagePicker.swift in Sources */,
 				C0B8B25A2821762C009EDED4 /* IOS_playgroundApp.swift in Sources */,
 				C0B8B269282176B1009EDED4 /* LocalFileManager.swift in Sources */,
+				C0469A9229337FF10056B417 /* FlightAppContentView.swift in Sources */,
 				C084E667285501040046C2A3 /* ActorsView.swift in Sources */,
 				C065866A291AEB8F00D1E57F /* Coffee.swift in Sources */,
 				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
@@ -777,12 +795,14 @@
 				C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */,
 				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
+				C0469A942933805F0056B417 /* FlightAppHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
 				C09855012928243F004B5DB3 /* Font+Extention.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
 				C0637310287B549000D03A73 /* Message.swift in Sources */,
 				C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */,
 				C0C8F9F0284406E00024782B /* VideoPlayerViewModel.swift in Sources */,
+				C0ABFF31293387BE00C0A2C3 /* FlightCard.swift in Sources */,
 				C0B8B27428217FA6009EDED4 /* Double.swift in Sources */,
 				C022DE79284B4BD900EB1008 /* CloudKitCRUDView.swift in Sources */,
 				C0627F8E291ECC1D00DDECFF /* Card.swift in Sources */,
