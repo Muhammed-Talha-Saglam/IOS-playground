@@ -15,6 +15,8 @@ struct FlightAppHomeView: View {
     @State var offsetY: CGFloat = 0
     @State var currentCardIndex: CGFloat = 0
     
+    @StateObject var animator: Animator = .init()
+    
     var body: some View {
         VStack(spacing: 0) {
             HeaderView()
@@ -34,11 +36,95 @@ struct FlightAppHomeView: View {
                             )
                     }
                     .offset(x: -15, y: 15)
-
+                    .offset(x: animator.startAnimation ? 80 : 0)
+                    
                 })
                 .zIndex(1)
             PaymentCardsView()
                 .zIndex(0)
+        }
+        .background{
+            ZStack(alignment: .bottom) {
+                
+                ZStack {
+                    if animator.showClouds {
+                        Group {
+                            /// Cloud view
+                            CloudView(delay: 1, size: size)
+                                .offset(y: size.height * -0.1)
+                            CloudView(delay: 0, size: size)
+                                .offset(y: size.height * 0.3)
+                            CloudView(delay: 2.5, size: size)
+                                .offset(y: size.height * 0.2)
+                            CloudView(delay: 2.5, size: size)
+                        }
+                    }
+                }
+                .frame(maxHeight: .infinity)
+                
+                if animator.showLoadingView{
+                    BackgroundView()
+                        .transition(.scale)
+                        .opacity(animator.showFinalView ? 0 : 1)
+                }
+            }
+        }
+        /// Whenever the final view show up disabling the actions on the Overlayed view
+        .allowsHitTesting(!animator.showFinalView)
+        .background(content: {
+            if animator.startAnimation {
+                FlightDetailView(size: size, safeArea: safeArea)
+                    .environmentObject(animator)
+            }
+        })
+        .overlayPreferenceValue(RectKey.self) { value in
+            if let anchor = value["PLANEBOUNDS"] {
+                GeometryReader { proxy in
+                    /// Extracting Rect from Anchor using Geometry Reader
+                    let rect = proxy[anchor]
+                    let planeRect = animator.initialPlanePosition
+                    let status = animator.currentPaymentStatus
+                    /// Resetting plane when its final view opens
+                    let animationStatus = status == .finished && !animator.showFinalView
+                    
+                    Image("airplane")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: planeRect.width, height: planeRect.height)
+                    /// Flight movement animation
+                        .rotationEffect(.init(degrees: animationStatus ? -10 : 0))
+                        .shadow(color: .black.opacity(0.25), radius: 1, x: status == .finished ? -400 : 0, y: status == .finished ? 170 : 0)
+                        .offset(x: planeRect.minX, y: planeRect.minY)
+                    /// Moving plane a bit down to look like its center when the 3D animation is happening
+                        .offset(y: animator.startAnimation ? 50 :0)
+                        .scaleEffect(animator.showFinalView ? 0.9 : 1)
+                        .offset(y: animator.showFinalView ? 30 : 0)
+                        .onAppear {
+                            animator.initialPlanePosition = rect
+                        }
+                        .animation(.easeInOut(duration: animationStatus ? 3.5 : 1.5), value: animationStatus)
+                }
+            }
+        }
+        .overlay {
+            if animator.showClouds{
+                CloudView(delay: 2.2, size: size)
+                    .offset(y: -size.height * 2.5)
+            }
+        }
+        /// Whenever the status changed to finished
+        /// Toggling the cloud view
+        .onChange(of: animator.currentPaymentStatus) { newValue in
+            if newValue == .finished{
+                animator.showClouds = true
+                
+                // Enabling final view After some time
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+                    withAnimation(.easeInOut(duration: 0.3)){
+                        animator.showFinalView = true
+                    }
+                }
+            }
         }
     }
     
@@ -51,10 +137,10 @@ struct FlightAppHomeView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: size.width * 0.4, height: 40)
                 .frame(maxWidth: .infinity, alignment: .leading)
-        
+            
             HStack {
                 FlightDetailsView(place: "Los Angeles", code: "LAS", timing: "23 Nov, 03.30")
-
+                
                 VStack(spacing: 8) {
                     Image(systemName: "chevron.right")
                         .font(.title2)
@@ -73,6 +159,11 @@ struct FlightAppHomeView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 160)
+            /// Hiding the original one
+                .opacity(0)
+                .anchorPreference(key: RectKey.self, value: .bounds, transform: { anchor in
+                    return ["PLANEBOUNDS": anchor]
+                })
                 .padding(.bottom, -20)
         }
         .padding([.horizontal, .top],15)
@@ -81,6 +172,10 @@ struct FlightAppHomeView: View {
             Rectangle()
                 .fill(LinearGradient(colors: [.blue, .blue, .blue.opacity(0.6)], startPoint: .top, endPoint: .bottom))
         }
+        .clipped()
+        /// Applying 3D Rotation
+        .rotation3DEffect(.init(degrees: animator.startAnimation ? 90 : 0), axis: (x: 1, y: 0, z: 0), anchor: .init(x: 0.5, y: 0.85))
+        .offset(y: animator.startAnimation ? -100 : 0)
     }
     
     // MARK: Credit Cards View
@@ -92,7 +187,7 @@ struct FlightAppHomeView: View {
                 .fontWeight(.semibold)
                 .foregroundColor(.gray)
                 .padding(.vertical)
-        
+            
             GeometryReader { _ in
                 VStack(spacing: 0) {
                     ForEach(sampleFlightCards.indices,id: \.self) { index in
@@ -118,7 +213,7 @@ struct FlightAppHomeView: View {
                 
                 // MARK: Purchase Button
                 Button {
-                    
+                    buyTicket()
                 } label: {
                     Text("Confirm $1,536.00")
                         .font(.caption)
@@ -133,7 +228,7 @@ struct FlightAppHomeView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 .padding(.bottom, safeArea.bottom == 0 ? 15 : safeArea.bottom)
-
+                
             }
             .coordinateSpace(name: "SCROLL")
         }
@@ -165,6 +260,24 @@ struct FlightAppHomeView: View {
             Color.white
                 .ignoresSafeArea()
         }
+        /// Applying 3D rotatoin
+        .rotation3DEffect(.init(degrees: animator.startAnimation ? -90 : 0), axis: (x: 1, y: 0, z: 0), anchor: .init(x: 0.5, y: 0.25))
+        .offset(y: animator.startAnimation ? 100 : 0)
+    }
+    
+    func buyTicket(){
+        /// Animating content
+        withAnimation(.easeInOut(duration: 0.85)){
+            animator.startAnimation = true
+        }
+        
+        /// Showing loading view after some time
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+            withAnimation(.easeInOut(duration: 0.7)){
+                animator.showLoadingView = true
+            }
+            animator.showLoadingView = true
+        }
     }
     
     // MARK: Card View
@@ -195,6 +308,86 @@ struct FlightAppHomeView: View {
         }
     }
     
+    // MARK: Background Loading View with ring animation
+    @ViewBuilder
+    func BackgroundView()->some View{
+        VStack {
+            ///Payment Status
+            VStack(spacing: 0) {
+                ForEach(PaymentStatus.allCases, id: \.rawValue) { status in
+                    Text(status.rawValue)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.gray.opacity(0.5))
+                        .frame(height: 30)
+                }
+            }
+            .offset(y: animator.currentPaymentStatus == .started ? -30 :
+                        animator.currentPaymentStatus == .finished ? -60 : 0)
+            .frame(height: 30, alignment: .top)
+            .clipped()
+            .zIndex(1)
+            
+            ZStack {
+                /// Ring 1
+                Circle()
+                    .fill(.gray.opacity(0.2))
+                    .shadow(color: .white.opacity(0.45), radius: 5, x: 5, y: 5)
+                    .shadow(color: .white.opacity(0.45), radius: 5, x: -5, y: -5)
+                    .scaleEffect(animator.ringAnimation[0] ? 5 : 1)
+                    .opacity(animator.ringAnimation[0] ? 0 : 1)
+                
+                /// Ring 2
+                Circle()
+                    .fill(.gray.opacity(0.2))
+                    .shadow(color: .white.opacity(0.45), radius: 5, x: 5, y: 5)
+                    .shadow(color: .white.opacity(0.45), radius: 5, x: -5, y: -5)
+                    .scaleEffect(animator.ringAnimation[1] ? 5 : 1)
+                    .opacity(animator.ringAnimation[1] ? 0 : 1)
+                
+                
+                Circle()
+                    .fill(.gray.opacity(0.2))
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
+                    .scaleEffect(1.22)
+                
+                Circle()
+                    .fill(.white)
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                
+                Image(systemName: animator.currentPaymentStatus.symbolImage)
+                    .font(.largeTitle)
+                    .foregroundColor(.gray.opacity(0.5))
+            }
+            .frame(width: 80, height: 80)
+            .padding(.top, 20)
+            .zIndex(0)
+        }
+        // Using timer to simulate loading effect
+        .onReceive(Timer.publish(every: 2.3, on: .main, in:     .common).autoconnect()) { _ in
+            withAnimation(.easeInOut(duration: 0.3)) {
+                if animator.currentPaymentStatus == .initated{
+                    animator.currentPaymentStatus = .started
+                } else {
+                    animator.currentPaymentStatus = .finished
+                }
+            }
+        }
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 2.5).repeatForever(autoreverses: false)) {
+                animator.ringAnimation[0] = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35){
+                withAnimation(.linear(duration: 2.5).repeatForever(autoreverses: false)) {
+                    animator.ringAnimation[1] = true
+                }
+            }
+            
+        })
+        .padding(.bottom, size.height * 0.15)
+    }
+        
 }
 
 struct FlightAppHomeView_Previews: PreviewProvider {
@@ -203,201 +396,52 @@ struct FlightAppHomeView_Previews: PreviewProvider {
     }
 }
 
-struct FlightDetailsView: View {
-    var alignment: HorizontalAlignment = .leading
-    var place: String
-    var code: String
-    var timing: String
+// MARK: Cloud View
+struct CloudView: View {
+    var delay: Double
+    var size: CGSize
+    @State private var moveCloud: Bool = false
     
     var body: some View{
-        VStack(alignment: alignment, spacing: 6) {
-            Text(place)
-                .font(.caption)
-                .foregroundColor(.white.opacity(0.8))
-            
-            Text(code)
-                .font(.title)
-                .foregroundColor(.white)
-            
-            Text(timing)
-                .font(.caption)
-                .foregroundColor(.white.opacity(0.8))
-        
-            
-        }
-        .frame(maxWidth: .infinity)
-
-    }
-}
-
-// MARK: Detail View UI
-struct FlightDetailView: View {
-    var size: CGSize
-    var safeArea: EdgeInsets
-    
-    var body: some View {
-        VStack {
-            VStack(spacing: 0) {
-                VStack {
-                    Image("")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100)
-                    
-                    Text("Your order has been submitted.")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
-                    
-                    Text("We are waiting for booking confirmation")
-                        .font(.caption)
-                        .foregroundColor(.white.opacity(0.8))
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.top, 30)
-                .padding(.bottom, 40)
-                .background(
-                    RoundedRectangle(cornerRadius: 15, style: .continuous)
-                        .fill(.white.opacity(0.1))
-                )
-                
-                HStack {
-                    FlightDetailsView(place: "Los Angeles", code: "LAS", timing: "23 Nov, 03.30")
-                    
-                    VStack(spacing: 8) {
-                        Image(systemName: "chevron.right")
-                            .font(.title2)
-                        
-                        Text("4h 15m")
-                    }
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    
-                    FlightDetailsView(alignment: .trailing,place: "New York", code: "NYC", timing: "23 Nov, 07.15")
-                }
-                .padding(15)
-                .padding(.bottom, 70)
-                .background(
-                    RoundedRectangle(cornerRadius: 15, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                )
-                .padding(.top, -20)
-            }
-            .padding(.horizontal, 20)
-            .padding(.bottom, safeArea.bottom + 15)
-            .padding([.horizontal, .bottom], 15)
-            .background(
-                Rectangle()
-                    .fill(.blue)
-                    .padding(.bottom,80)
-            )
-            // MARK: Contact information view
-            GeometryReader { proxy in
-                // Responsive UI For smaller devices
-                ViewThatFits {
-                    ContactInformation()
-                    ScrollView(.vertical, showsIndicators: false) {
-                        ContactInformation()
-                    }
-                }
-            }
-        }
-    }
-    
-    @ViewBuilder
-    func ContactInformation()->some View{
-        VStack(spacing: 15) {
-            HStack{
-                InfoView(title: "Flight", subtitle: "AR 580")
-                InfoView(title: "Class", subtitle: "Premium")
-                InfoView(title: "Aircraft", subtitle: "B 737-900")
-                InfoView(title: "Possibility", subtitle: "AR 580")
-
-            }
-            
-            ContactView(name: "iJustine", email: "justine@apple.com", profile: "talha")
-                .padding(.top, 30)
-
-            ContactView(name: "Jenna", email: "jenna@apple.com", profile: "talha")
-                .padding(.top, 30)
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Total Price")
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
-                
-                Text("$1,536.00")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.top, 20)
-            .padding(.leading, 15)
-            
-            // MARK: Home screen button
-            Button {
-                
-            } label: {
-                Text("Go to home screen")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 10)
-                    .background(
-                        Capsule()
-                            .fill(.blue.gradient)
-                    )
-            }
-            .padding(.top,15)
-            .frame(maxHeight: .infinity, alignment: .bottom)
-            .padding(.bottom, safeArea.bottom)
-        }
-        .padding(15)
-        .padding(.top,20)
-    }
-    
-    // MARK: Contact View
-    @ViewBuilder
-    func ContactView(name: String, email: String, profile: String)->some View{
-        HStack {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(name)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-                
-                Text(email)
-                    .font(.callout)
-                    .foregroundColor(.gray)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Image(profile)
+        ZStack {
+            Image(systemName: "cloud.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 45, height: 45)
-                .clipShape(Circle())
-        }
-        .padding(.horizontal, 15)
-    }
-    
-    // MARK: Info View
-    @ViewBuilder
-    func InfoView(title: String, subtitle: String) -> some View {
-        VStack(alignment: .center, spacing: 4) {
-            Text(title)
-                .font(.caption2)
-                .fontWeight(.semibold)
+                .frame(width: size.width * 3)
+                .offset(x: moveCloud ? -size.width*2 : size.width*2)
                 .foregroundColor(.gray)
-
-            Text(subtitle)
-                .font(.caption)
-                .fontWeight(.semibold)
-                .foregroundColor(.black)
-
         }
-        .frame(maxWidth: .infinity)
+        .onAppear {
+            /// Duration = speed of the movement of the cloud
+            withAnimation(.easeInOut(duration: 5.5).delay(delay)) {
+                moveCloud.toggle()
+            }
+        }
     }
 }
- 
+
+
+// MARK: Observable object that holds all animation properties
+class Animator: ObservableObject {
+    /// Animation Properties
+    @Published var startAnimation: Bool = false
+    /// Initial plane position
+    @Published var initialPlanePosition: CGRect = .zero
+    @Published var currentPaymentStatus: PaymentStatus = .initated
+    /// Rings Status
+    @Published var ringAnimation:[Bool] = [false, false]
+    /// Loading Status
+    @Published var showLoadingView: Bool = false
+    /// Cloud view
+    @Published var showClouds: Bool = false
+    /// Final view status
+    @Published var showFinalView: Bool = false
+}
+
+// MARK: Anchor Preference Key
+struct RectKey: PreferenceKey {
+    static var defaultValue: [String: Anchor<CGRect>] = [:]
+    static func reduce(value: inout [String : Anchor<CGRect>], nextValue: () -> [String : Anchor<CGRect>]) {
+        value.merge(nextValue()) {$1}
+    }
+}

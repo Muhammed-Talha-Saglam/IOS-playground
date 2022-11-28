@@ -51,6 +51,9 @@
 		C087DFBB291FFF3600C58D48 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBA291FFF3600C58D48 /* Book.swift */; };
 		C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBC292009F300C58D48 /* IsometricView.swift */; };
 		C087DFC0292112D600C58D48 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBF292112D600C58D48 /* APIService.swift */; };
+		C093D2722933D0610018CE8C /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2712933D0610018CE8C /* FlightDetailView.swift */; };
+		C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2732933D11D0018CE8C /* FlightDetailsView.swift */; };
+		C093D2762933D95B0018CE8C /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2752933D95B0018CE8C /* PaymentStatus.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
 		C09854FD292822DA004B5DB3 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */; };
@@ -180,6 +183,9 @@
 		C087DFBA291FFF3600C58D48 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C087DFBC292009F300C58D48 /* IsometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricView.swift; sourceTree = "<group>"; };
 		C087DFBF292112D600C58D48 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C093D2712933D0610018CE8C /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		C093D2732933D11D0018CE8C /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
+		C093D2752933D95B0018CE8C /* PaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
 		C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
@@ -344,6 +350,9 @@
 				C0469A9129337FF10056B417 /* FlightAppContentView.swift */,
 				C0469A932933805F0056B417 /* FlightAppHomeView.swift */,
 				C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */,
+				C093D2712933D0610018CE8C /* FlightDetailView.swift */,
+				C093D2732933D11D0018CE8C /* FlightDetailsView.swift */,
+				C093D2752933D95B0018CE8C /* PaymentStatus.swift */,
 			);
 			path = flightApp;
 			sourceTree = "<group>";
@@ -746,6 +755,7 @@
 				C0B8B25C2821762C009EDED4 /* ContentView.swift in Sources */,
 				C0C8F9EC2843F5B30024782B /* MiniPlayerView.swift in Sources */,
 				C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */,
+				C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */,
 				C0D669222850F32D00013778 /* LocationsListView.swift in Sources */,
 				C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */,
 				C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */,
@@ -763,6 +773,7 @@
 				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
 				C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */,
 				C087DFBB291FFF3600C58D48 /* Book.swift in Sources */,
+				C093D2722933D0610018CE8C /* FlightDetailView.swift in Sources */,
 				C0D6691D2850E4E900013778 /* LocationsView.swift in Sources */,
 				C0B9DFC52843A00E00328E11 /* UIViewControllerRepresentableSample.swift in Sources */,
 				C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */,
@@ -812,6 +823,7 @@
 				C022DE7D284B72A800EB1008 /* CloudKitUtility.swift in Sources */,
 				C0C8F9EE2843F5F70024782B /* VideoPlayerView.swift in Sources */,
 				C00B6F8E291C372C00A1EA50 /* RollingText.swift in Sources */,
+				C093D2762933D95B0018CE8C /* PaymentStatus.swift in Sources */,
 				C084E6692855041F0046C2A3 /* GlobalActorView.swift in Sources */,
 				C0A3857B283A947700BB9D19 /* CustomCurvesView.swift in Sources */,
 				C0B30D0C2854CF1100735443 /* AsyncLetView.swift in Sources */,
