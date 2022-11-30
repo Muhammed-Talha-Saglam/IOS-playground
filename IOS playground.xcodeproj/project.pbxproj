@@ -54,6 +54,7 @@
 		C093D2722933D0610018CE8C /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2712933D0610018CE8C /* FlightDetailView.swift */; };
 		C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2732933D11D0018CE8C /* FlightDetailsView.swift */; };
 		C093D2762933D95B0018CE8C /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2752933D95B0018CE8C /* PaymentStatus.swift */; };
+		C094A4F32937E66C00046B60 /* magnificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A4F22937E66C00046B60 /* magnificationView.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
 		C09854FD292822DA004B5DB3 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */; };
@@ -186,6 +187,7 @@
 		C093D2712933D0610018CE8C /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
 		C093D2732933D11D0018CE8C /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
 		C093D2752933D95B0018CE8C /* PaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
+		C094A4F22937E66C00046B60 /* magnificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magnificationView.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
 		C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C094A4F12937E64E00046B60 /* magnificationApp */,
 				C0469A9029337FAC0056B417 /* flightApp */,
 				C081591D2923F2DB00D9B08D /* parallaxEffect */,
 				C0C0512B2922BC11005667A0 /* boomerangCardEffect */,
@@ -417,6 +420,14 @@
 				C087DFBF292112D600C58D48 /* APIService.swift */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		C094A4F12937E64E00046B60 /* magnificationApp */ = {
+			isa = PBXGroup;
+			children = (
+				C094A4F22937E66C00046B60 /* magnificationView.swift */,
+			);
+			path = magnificationApp;
 			sourceTree = "<group>";
 		};
 		C0B8B24D2821762C009EDED4 = {
@@ -746,6 +757,7 @@
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
 				C065866C291AED1E00D1E57F /* CoffeeApp.swift in Sources */,
 				C01F30082870C8D900883294 /* ResponsiveView.swift in Sources */,
+				C094A4F32937E66C00046B60 /* magnificationView.swift in Sources */,
 				C08159212924248D00D9B08D /* NavigationStataManager.swift in Sources */,
 				C0A3857D283AA6F800BB9D19 /* AnimatableDataView.swift in Sources */,
 				C0D669242850FAF700013778 /* LocationPreviewView.swift in Sources */,
