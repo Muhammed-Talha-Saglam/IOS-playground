@@ -24,6 +24,9 @@
 		C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */; };
 		C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744A7285F65B900483630 /* ExtensionsView.swift */; };
 		C030EE36286B864900078400 /* AccessSwiftUIValueFromUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */; };
+		C032B8ED293A6DDF002F132B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032B8EC293A6DDF002F132B /* Album.swift */; };
+		C032B8EF293A6EA4002F132B /* AnimatedStickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032B8EE293A6EA4002F132B /* AnimatedStickyHeaderView.swift */; };
+		C032B8F1293A6EEA002F132B /* StickyHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032B8F0293A6EEA002F132B /* StickyHeaderContentView.swift */; };
 		C03C9DF0283989660052AB30 /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */; };
 		C040430428676A46001F65CF /* CarouselSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040430328676A46001F65CF /* CarouselSliderView.swift */; };
 		C0469A9229337FF10056B417 /* FlightAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0469A9129337FF10056B417 /* FlightAppContentView.swift */; };
@@ -157,6 +160,9 @@
 		C02744A5285F5A1B00483630 /* AnimatedSlideOutMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSlideOutMenuView.swift; sourceTree = "<group>"; };
 		C02744A7285F65B900483630 /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
 		C030EE35286B864900078400 /* AccessSwiftUIValueFromUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSwiftUIValueFromUIKit.swift; sourceTree = "<group>"; };
+		C032B8EC293A6DDF002F132B /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C032B8EE293A6EA4002F132B /* AnimatedStickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStickyHeaderView.swift; sourceTree = "<group>"; };
+		C032B8F0293A6EEA002F132B /* StickyHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderContentView.swift; sourceTree = "<group>"; };
 		C03C9DEF283989660052AB30 /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 		C040430328676A46001F65CF /* CarouselSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSliderView.swift; sourceTree = "<group>"; };
 		C0469A9129337FF10056B417 /* FlightAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAppContentView.swift; sourceTree = "<group>"; };
@@ -281,6 +287,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C032B8EB293A6DAC002F132B /* animatedStickyHeader */,
 				C094A4F12937E64E00046B60 /* magnificationApp */,
 				C0469A9029337FAC0056B417 /* flightApp */,
 				C081591D2923F2DB00D9B08D /* parallaxEffect */,
@@ -345,6 +352,16 @@
 				C0FF6236285A382100CF5251 /* AsynPublisherView.swift */,
 			);
 			path = SwiftConcurrency;
+			sourceTree = "<group>";
+		};
+		C032B8EB293A6DAC002F132B /* animatedStickyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C032B8EC293A6DDF002F132B /* Album.swift */,
+				C032B8EE293A6EA4002F132B /* AnimatedStickyHeaderView.swift */,
+				C032B8F0293A6EEA002F132B /* StickyHeaderContentView.swift */,
+			);
+			path = animatedStickyHeader;
 			sourceTree = "<group>";
 		};
 		C0469A9029337FAC0056B417 /* flightApp */ = {
@@ -768,6 +785,7 @@
 				C0C8F9EC2843F5B30024782B /* MiniPlayerView.swift in Sources */,
 				C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */,
 				C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */,
+				C032B8ED293A6DDF002F132B /* Album.swift in Sources */,
 				C0D669222850F32D00013778 /* LocationsListView.swift in Sources */,
 				C012EC4E28395CE600E58F15 /* ViewStyles.swift in Sources */,
 				C04E56DC284296C700D356F4 /* UIViewRepresentableSample.swift in Sources */,
@@ -798,6 +816,7 @@
 				C0B8B27128217FA6009EDED4 /* Date.swift in Sources */,
 				C0728333284A7CF500DC3BE5 /* FuturesView.swift in Sources */,
 				C0FF6237285A382100CF5251 /* AsynPublisherView.swift in Sources */,
+				C032B8F1293A6EEA002F132B /* StickyHeaderContentView.swift in Sources */,
 				C022DE77284A867400EB1008 /* CloudKitUserView.swift in Sources */,
 				C0C3733128524A5400294DA9 /* LocationDetailView.swift in Sources */,
 				C0637312287B551200D03A73 /* ChatView.swift in Sources */,
@@ -821,6 +840,7 @@
 				C0469A942933805F0056B417 /* FlightAppHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
 				C09855012928243F004B5DB3 /* Font+Extention.swift in Sources */,
+				C032B8EF293A6EA4002F132B /* AnimatedStickyHeaderView.swift in Sources */,
 				C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */,
 				C0637310287B549000D03A73 /* Message.swift in Sources */,
 				C02744A6285F5A1B00483630 /* AnimatedSlideOutMenuView.swift in Sources */,
