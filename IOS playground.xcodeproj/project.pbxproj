@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00183AF293B7BD500BD4945 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00183AE293B7BD500BD4945 /* CustomCorner.swift */; };
+		C00183B1293BDBAA00BD4945 /* ResponsiveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */; };
 		C00B6F8C291C310900A1EA50 /* WalletAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B6F8B291C310900A1EA50 /* WalletAppView.swift */; };
 		C00B6F8E291C372C00A1EA50 /* RollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B6F8D291C372C00A1EA50 /* RollingText.swift */; };
 		C00E20632857A882008C648E /* SendableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E20622857A882008C648E /* SendableView.swift */; };
@@ -143,6 +145,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C00183AE293B7BD500BD4945 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView2.swift; sourceTree = "<group>"; };
 		C00B6F8B291C310900A1EA50 /* WalletAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppView.swift; sourceTree = "<group>"; };
 		C00B6F8D291C372C00A1EA50 /* RollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingText.swift; sourceTree = "<group>"; };
 		C00E20622857A882008C648E /* SendableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableView.swift; sourceTree = "<group>"; };
@@ -276,6 +280,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00183AD293B7BAA00BD4945 /* customCorner */ = {
+			isa = PBXGroup;
+			children = (
+				C00183AE293B7BD500BD4945 /* CustomCorner.swift */,
+			);
+			path = customCorner;
+			sourceTree = "<group>";
+		};
 		C00B6F8A291C2FC500A1EA50 /* walletApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +299,7 @@
 		C012EC4F283973AB00E58F15 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C00183AD293B7BAA00BD4945 /* customCorner */,
 				C032B8EB293A6DAC002F132B /* animatedStickyHeader */,
 				C094A4F12937E64E00046B60 /* magnificationApp */,
 				C0469A9029337FAC0056B417 /* flightApp */,
@@ -321,6 +334,7 @@
 				C067E9C028803D8E005A66F0 /* AnimatedNumberText.swift */,
 				C00B6F8D291C372C00A1EA50 /* RollingText.swift */,
 				C0A7307C292955C300DD634A /* StickyHeaderView.swift */,
+				C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -769,6 +783,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09854FF292823F5004B5DB3 /* CustomFont.swift in Sources */,
+				C00183AF293B7BD500BD4945 /* CustomCorner.swift in Sources */,
 				C067E9C128803D8E005A66F0 /* AnimatedNumberText.swift in Sources */,
 				C0B8B27528217FA6009EDED4 /* UIApplication.swift in Sources */,
 				C0C3732F2852406300294DA9 /* LocationMapAnnotationView.swift in Sources */,
@@ -836,6 +851,7 @@
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
 				C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */,
 				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
+				C00183B1293BDBAA00BD4945 /* ResponsiveView2.swift in Sources */,
 				C0C8F9E82843F09A0024782B /* YoutubeHomeView.swift in Sources */,
 				C0469A942933805F0056B417 /* FlightAppHomeView.swift in Sources */,
 				C0B30D102854DC2400735443 /* CheckedContinuationView.swift in Sources */,
