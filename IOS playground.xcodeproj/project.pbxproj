@@ -71,6 +71,7 @@
 		C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7307C292955C300DD634A /* StickyHeaderView.swift */; };
 		C0A7C6A9287C93E2003062C6 /* DraggableBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */; };
 		C0ABFF31293387BE00C0A2C3 /* FlightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */; };
+		C0AF41382942710200F0478C /* AlternateStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF41372942710200F0478C /* AlternateStackLayout.swift */; };
 		C0B0D99D293E786700005B8A /* CustomEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B0D99C293E786700005B8A /* CustomEnvironmentKey.swift */; };
 		C0B0D99F293E7B9900005B8A /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B0D99E293E7B9900005B8A /* AppReviewRequest.swift */; };
 		C0B28FFA283A233A00561BD2 /* CustomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */; };
@@ -211,6 +212,7 @@
 		C0A7307C292955C300DD634A /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		C0A7C6A8287C93E2003062C6 /* DraggableBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableBottomSheetView.swift; sourceTree = "<group>"; };
 		C0ABFF30293387BE00C0A2C3 /* FlightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCard.swift; sourceTree = "<group>"; };
+		C0AF41372942710200F0478C /* AlternateStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateStackLayout.swift; sourceTree = "<group>"; };
 		C0B0D99C293E786700005B8A /* CustomEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnvironmentKey.swift; sourceTree = "<group>"; };
 		C0B0D99E293E7B9900005B8A /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
 		C0B28FF9283A233A00561BD2 /* CustomShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				C00B6F8D291C372C00A1EA50 /* RollingText.swift */,
 				C0A7307C292955C300DD634A /* StickyHeaderView.swift */,
 				C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */,
+				C0AF41372942710200F0478C /* AlternateStackLayout.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				C0B8B25C2821762C009EDED4 /* ContentView.swift in Sources */,
 				C0C8F9EC2843F5B30024782B /* MiniPlayerView.swift in Sources */,
 				C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */,
+				C0AF41382942710200F0478C /* AlternateStackLayout.swift in Sources */,
 				C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */,
 				C032B8ED293A6DDF002F132B /* Album.swift in Sources */,
 				C0D669222850F32D00013778 /* LocationsListView.swift in Sources */,
