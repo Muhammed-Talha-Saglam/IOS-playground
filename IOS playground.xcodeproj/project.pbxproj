@@ -56,6 +56,7 @@
 		C087DFBB291FFF3600C58D48 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBA291FFF3600C58D48 /* Book.swift */; };
 		C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBC292009F300C58D48 /* IsometricView.swift */; };
 		C087DFC0292112D600C58D48 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087DFBF292112D600C58D48 /* APIService.swift */; };
+		C08A3B5E2943CD4200A328E1 /* MeasureSizeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A3B5D2943CD4200A328E1 /* MeasureSizeModifier.swift */; };
 		C093D2722933D0610018CE8C /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2712933D0610018CE8C /* FlightDetailView.swift */; };
 		C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2732933D11D0018CE8C /* FlightDetailsView.swift */; };
 		C093D2762933D95B0018CE8C /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C093D2752933D95B0018CE8C /* PaymentStatus.swift */; };
@@ -197,6 +198,7 @@
 		C087DFBA291FFF3600C58D48 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C087DFBC292009F300C58D48 /* IsometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricView.swift; sourceTree = "<group>"; };
 		C087DFBF292112D600C58D48 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C08A3B5D2943CD4200A328E1 /* MeasureSizeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureSizeModifier.swift; sourceTree = "<group>"; };
 		C093D2712933D0610018CE8C /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
 		C093D2732933D11D0018CE8C /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
 		C093D2752933D95B0018CE8C /* PaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */,
+				C08A3B5D2943CD4200A328E1 /* MeasureSizeModifier.swift */,
 			);
 			path = modifiers;
 			sourceTree = "<group>";
@@ -816,6 +819,7 @@
 				C0B8B25C2821762C009EDED4 /* ContentView.swift in Sources */,
 				C0C8F9EC2843F5B30024782B /* MiniPlayerView.swift in Sources */,
 				C0C0512D2922BC34005667A0 /* BoomerangCard.swift in Sources */,
+				C08A3B5E2943CD4200A328E1 /* MeasureSizeModifier.swift in Sources */,
 				C0AF41382942710200F0478C /* AlternateStackLayout.swift in Sources */,
 				C093D2742933D11D0018CE8C /* FlightDetailsView.swift in Sources */,
 				C032B8ED293A6DDF002F132B /* Album.swift in Sources */,
