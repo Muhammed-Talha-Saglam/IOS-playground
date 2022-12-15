@@ -121,6 +121,7 @@
 		C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D52860E233007A6529 /* NotificationsListView.swift */; };
 		C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */; };
 		C0ED10DA2860FC5B007A6529 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED10D92860FC5B007A6529 /* LocalNotification.swift */; };
+		C0F61F1B294BAD5F00F1E02F /* BlurredBgModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F61F1A294BAD5F00F1E02F /* BlurredBgModifier.swift */; };
 		C0FF6237285A382100CF5251 /* AsynPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF6236285A382100CF5251 /* AsynPublisherView.swift */; };
 /* End PBXBuildFile section */
 
@@ -265,6 +266,7 @@
 		C0ED10D52860E233007A6529 /* NotificationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListView.swift; sourceTree = "<group>"; };
 		C0ED10D72860E389007A6529 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		C0ED10D92860FC5B007A6529 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		C0F61F1A294BAD5F00F1E02F /* BlurredBgModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredBgModifier.swift; sourceTree = "<group>"; };
 		C0FF6236285A382100CF5251 /* AsynPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynPublisherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -405,6 +407,7 @@
 			children = (
 				C05A5AEC291AD1D700D02CBC /* DismissButtonModifier.swift */,
 				C08A3B5D2943CD4200A328E1 /* MeasureSizeModifier.swift */,
+				C0F61F1A294BAD5F00F1E02F /* BlurredBgModifier.swift */,
 			);
 			path = modifiers;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 				C0ED10D62860E233007A6529 /* NotificationsListView.swift in Sources */,
 				C087DFBD292009F300C58D48 /* IsometricView.swift in Sources */,
 				C087DFBB291FFF3600C58D48 /* Book.swift in Sources */,
+				C0F61F1B294BAD5F00F1E02F /* BlurredBgModifier.swift in Sources */,
 				C093D2722933D0610018CE8C /* FlightDetailView.swift in Sources */,
 				C0B0D99F293E7B9900005B8A /* AppReviewRequest.swift in Sources */,
 				C0D6691D2850E4E900013778 /* LocationsView.swift in Sources */,
