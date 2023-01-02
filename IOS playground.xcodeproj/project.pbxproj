@@ -63,6 +63,7 @@
 		C094A4F32937E66C00046B60 /* magnificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A4F22937E66C00046B60 /* magnificationView.swift */; };
 		C0964BB0283FF250000B754E /* ViewBuilderSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0964BAF283FF250000B754E /* ViewBuilderSample.swift */; };
 		C096F99D2821B69100501B09 /* JsonToStructFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */; };
+		C097E8C6296360170065E467 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C097E8C5296360170065E467 /* CustomBlurView.swift */; };
 		C09854FD292822DA004B5DB3 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */; };
 		C09854FF292823F5004B5DB3 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09854FE292823F5004B5DB3 /* CustomFont.swift */; };
 		C09855012928243F004B5DB3 /* Font+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09855002928243F004B5DB3 /* Font+Extention.swift */; };
@@ -206,6 +207,7 @@
 		C094A4F22937E66C00046B60 /* magnificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magnificationView.swift; sourceTree = "<group>"; };
 		C0964BAF283FF250000B754E /* ViewBuilderSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderSample.swift; sourceTree = "<group>"; };
 		C096F99C2821B69100501B09 /* JsonToStructFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToStructFromBundle.swift; sourceTree = "<group>"; };
+		C097E8C5296360170065E467 /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
 		C09854FC292822DA004B5DB3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		C09854FE292823F5004B5DB3 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		C09855002928243F004B5DB3 /* Font+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extention.swift"; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				C0A7307C292955C300DD634A /* StickyHeaderView.swift */,
 				C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */,
 				C0AF41372942710200F0478C /* AlternateStackLayout.swift */,
+				C097E8C5296360170065E467 /* CustomBlurView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -877,6 +880,7 @@
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
+				C097E8C6296360170065E467 /* CustomBlurView.swift in Sources */,
 				C0A7307D292955C300DD634A /* StickyHeaderView.swift in Sources */,
 				C0C0512F2922BCD1005667A0 /* BoomerangCardView.swift in Sources */,
 				C00183B1293BDBAA00BD4945 /* ResponsiveView2.swift in Sources */,
