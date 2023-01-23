@@ -10,6 +10,7 @@
 		815A6580297D90880015035D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A657F297D90880015035D /* LottieView.swift */; };
 		815A6582297D90AC0015035D /* LottiePlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6581297D90AC0015035D /* LottiePlusView.swift */; };
 		815A6585297D911D0015035D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 815A6584297D911D0015035D /* Lottie */; };
+		815CC799297F239300EA0DE6 /* CustomPopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815CC798297F239300EA0DE6 /* CustomPopOverView.swift */; };
 		C00183AF293B7BD500BD4945 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00183AE293B7BD500BD4945 /* CustomCorner.swift */; };
 		C00183B1293BDBAA00BD4945 /* ResponsiveView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */; };
 		C00B6F8C291C310900A1EA50 /* WalletAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B6F8B291C310900A1EA50 /* WalletAppView.swift */; };
@@ -156,6 +157,7 @@
 /* Begin PBXFileReference section */
 		815A657F297D90880015035D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		815A6581297D90AC0015035D /* LottiePlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiePlusView.swift; sourceTree = "<group>"; };
+		815CC798297F239300EA0DE6 /* CustomPopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopOverView.swift; sourceTree = "<group>"; };
 		C00183AE293B7BD500BD4945 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		C00183B0293BDBAA00BD4945 /* ResponsiveView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView2.swift; sourceTree = "<group>"; };
 		C00B6F8B291C310900A1EA50 /* WalletAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppView.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				C097E8C5296360170065E467 /* CustomBlurView.swift */,
 				815A657F297D90880015035D /* LottieView.swift */,
 				815A6581297D90AC0015035D /* LottiePlusView.swift */,
+				815CC798297F239300EA0DE6 /* CustomPopOverView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -892,6 +895,7 @@
 				C02744A8285F65B900483630 /* ExtensionsView.swift in Sources */,
 				C0627F90291ECC7B00DDECFF /* AnimatedCarousel.swift in Sources */,
 				C0B8B27228217FA6009EDED4 /* PreviewProvider.swift in Sources */,
+				815CC799297F239300EA0DE6 /* CustomPopOverView.swift in Sources */,
 				C012EC51283973C900E58F15 /* AnyTransitionView.swift in Sources */,
 				C0ED10D82860E389007A6529 /* LocalNotificationManager.swift in Sources */,
 				C097E8C6296360170065E467 /* CustomBlurView.swift in Sources */,
